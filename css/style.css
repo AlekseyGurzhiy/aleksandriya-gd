@@ -1,0 +1,766 @@
+
+/* Настройка шрифтов */
+
+@font-face {
+	font-family: 'Beauty';
+	src: url(../fonts/Amour.eot);
+	src: local('O'),
+		url(../fonts/Amour.woff) format('woff'),
+		url(../fonts/Amour.ttf)  format('truetype'),
+		url(../fonts/Amour.svg)  format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'FuturaBook';
+	src: url(../fonts/FuturaBook.eot);
+	src: local('O'),
+		url(../fonts/FuturaBook.woff) format('woff'),
+		url(../fonts/FuturaBook.ttf)  format('truetype'),
+		url(../fonts/FuturaBook.svg)  format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Andika';
+	src: url(../fonts/Andika.eot);
+	src: local('O'),
+		url(../fonts/Andika.woff) format('woff'),
+		url(../fonts/Andika.ttf)  format('truetype'),
+		url(../fonts/Andika.svg)  format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+/* Настройка общих тегов, определение html5 */
+
+article,
+aside,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+nav,
+section,
+time {
+	display: block;
+}
+
+html,
+body {
+	height: 100%;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	background: url(../img/back1.jpg) no-repeat fixed #eddec1;
+}
+
+nav {
+	min-width: 600px;
+	max-width: 896px;
+	margin: 0 auto 10px;
+	background: url(../img/bg-159.png);
+	box-shadow: 0 0 10px #3ee4f9;
+	border-radius: 5px;
+}
+
+nav ul {
+	list-style: none;
+	line-height: 50px;
+	text-align: center;
+}
+
+nav ul li {
+	display: inline;
+	padding: 5px;
+	color: #f5f5dc;
+	text-align: center;
+	background: url(../img/button_element.png) repeat-x;
+	border-radius: 4px;
+  border: 1px solid #3ee4f9;
+  box-shadow: 1px 1px 1px black;
+}
+
+nav ul li:hover { text-shadow: 0 0 1px #f5f5dc; }
+
+nav ul li:active {
+	background: #4087ac;
+	box-shadow: 0 0 1px black;
+}
+
+section {
+	min-width: 560px;
+	max-width: 860px;
+	min-height: 100%;
+	margin: 0 auto;
+	padding: 10px 20px;
+	background: url(../img/bg-159.png);
+	border-radius: 7px;
+	box-shadow: 0 0 10px #3ee4f9;
+	overflow: hidden;
+}
+
+section p,
+section ul li {
+	padding: 5px;
+	background: rgba(255,255,255,.8);
+	border-radius: 7px;
+	margin: 5px auto;
+}
+
+article {
+	margin: 20px auto;
+	padding: 10px 20px;
+	font: 14px FuturaBook;
+	background: #f5f5dc;
+	border-radius: 10px;
+	border: 1px solid #509111;
+	box-shadow: 2px 2px 2px black;
+}
+
+article h4 {
+	margin: 0;
+	padding-bottom: 5px;
+	font-weight: normal;
+	border-bottom: 1px solid white;
+	text-indent:0;
+}
+
+article h4 span { float: right; }
+
+article p {
+	text-indent: 0;
+	background: inherit;
+}
+
+h1 {
+	margin: 10px;
+	color: black;
+}
+
+h2 {
+	margin: 0;
+	padding-top: 20px;
+	color: black;
+	clear: both;
+}
+
+h3 {
+	margin: 20px 5px 5px 5px;
+	color: black;
+}
+
+a {
+	color: #f5f5dc;
+	text-decoration: none;
+}
+
+a:hover {
+	color: #f5f5cd;
+}
+
+/* Описание классов */
+.clear { clear: both; }
+.red { color: red; }
+.center { text-align: center; }
+.center-block { margin: 0 auto; }
+.mt10 { margin-top: 10px; }
+.mt20 { margin-top: 20px; }
+.mt30 { margin-top: 30px; }
+.left { text-align: left !important; }
+.right { text-align: right; }
+.fl_left { float: left; }
+.fl_right { float: right; }
+.justify { text-align: justify; }
+.bold {	font-weight: bold; }
+.w30per { width: 30%; }
+.w100per { width: 100%; }
+
+.size_10 { font-size: 10px; }
+.size_11 { font-size: 11px; }
+.size_12 { font-size: 12px; }
+.size_16 { font-size: 16px; }
+.size_18 { font-size: 18px; }
+.size_60 { font-size: 60px; }
+
+.darken {
+	position: fixed;
+	z-index: 5;
+	display:none;
+	width: 100%;
+	height: 100%;
+	background: black;
+	opacity: .8;
+}
+
+.add_reviews-area {
+	position: absolute;
+	top: 118px;
+	left: 50%;
+	z-index: 6;
+	display: none;
+	min-width: 880px;
+	max-width: 1180px;
+	margin-left: -450px;
+	padding: 10px;
+	background: white url(../img/bg-159.png);
+	border-radius: 10px;
+}
+
+
+.font_norm {
+	font: 18px 'FuturaBook';
+	color: black;
+}
+
+.font_norm:hover,
+.phone:hover {
+	color: #68b12f;
+	text-decoration: underline;
+}
+
+.editor_form{
+	border: 1px solid white;
+	border-radius: 5px;
+	box-shadow: 1px 1px 3px #f5f5dc;
+	margin: 30px 0;
+	background-color: rgba(75,163,206,0.2);
+	padding: 5px;
+}
+
+.content {
+	position: relative;
+	display: block;
+	min-width: 900px;
+	max-width: 1200px;
+	min-height: 96.5%;
+	margin: 0 auto;
+	padding-bottom: 30px;
+	font-family: 'Andika';
+	background: url(../img/content-bg.png) repeat;
+	border-radius: 5px;
+}
+
+.logo {
+	position: relative;
+	z-index: 1;
+	min-width: 600px;
+	max-width: 900px;
+	height: 243px;
+	margin: 0 auto;
+	text-align: left;
+	/*background: url(../img/logo.png) no-repeat 30px;*/
+}
+
+.logo h1{
+	position: absolute;
+	margin: 0;
+	padding: 0;
+	text-indent: -9999px;
+}
+
+.logo_text {
+	float: left;
+	height: 163px;
+	width: 500px;
+	padding-top: 80px;
+	font: 32px 'Beauty';
+	color: #000;
+	text-shadow: 0 0 10px #f5f5dc;
+	text-align: center;
+}
+
+.logo_img {	float: left; }
+
+.logo_image_right {
+	position: absolute;
+	right: 10px;
+}
+
+.logo_image_left {
+	position: absolute;
+	left: 10px;
+	width: 30%;
+}
+
+.logo_phone {
+	position: absolute;
+	width: 200px;
+	margin-top: 40px;
+	font-size: 20px;
+}
+
+.booking {
+	float: right;
+	width: 216px;
+	height: 240px;
+}
+
+.editor_room {
+	position: relative;
+	float: left;
+	width: 130px;
+	height: 70px;
+	margin: 10px 5px;
+	color: #f5f5dc;
+	background: url(../img/button_element_70.png) repeat-x;
+	border-radius: 4px;
+    border: 1px solid #509111;
+	box-shadow: 1px 1px 3px black;
+	cursor: pointer;
+}
+
+.editor_price {
+	padding: 10px;
+	border-radius: 10px;
+	border: 1px solid white;
+	box-shadow: 0 0 5px white;
+}
+
+.editor_price-input,
+.editor_level-input,
+.editor_room_number-input,
+.editor_place_count-input,
+.editor_space_number-input,
+.editor_extra_space-input {
+	width: 70px;
+	font: 20px 'FuturaBook';
+	/*text-align: center;*/
+	background: #ddd;
+	border-radius: 3px;
+	border: 1px solid green;
+	outline: none;
+	text-align: center;
+}
+
+.editor_price-input:focus,
+.editor_level-input:focus,
+.editor_room_number-input:focus,
+.editor_place_count-input:focus,
+.editor_space_number-input:focus,
+.editor_extra_space-input:focus { box-shadow: 0 0 3px green; }
+
+.editor_name-select {
+	width: 220px;
+	font: 22px 'FuturaBook';
+	text-align: center;
+	text-align-last: center;
+	background: #ddd;
+	border-radius: 3px;
+	border: 1px solid green;
+	outline: none;
+}
+
+.editor_room-active {
+	color: #B8B8A1;
+	background: #3f681e;
+	box-shadow: 0 0 1px black;
+}
+
+.editor_room:hover { text-shadow: 0 0 1px #f5f5dc; }
+
+.editor_room-name {
+	position: absolute;
+	top: 0;
+	width: 100%;
+	font-size: 18px;
+	text-align: center;
+}
+
+.editor_room-size {
+	position: absolute;
+	bottom: 0;
+	width: inherit;
+	font-size: 26px;
+	text-align: center;
+}
+
+.editor_room-place_count {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	font-size: 48px;
+	font-weight: bold;
+	color: #555;
+	text-align: center;
+}
+
+.editor_level,
+.editor_name,
+.editor_room_number,
+.editor_place_count,
+.editor_space_number,
+.editor_extra_space { margin-top: 20px; }
+
+.editor_level-name,
+.editor_name-name,
+.editor_room_number-name,
+.editor_place_count-name,
+.editor_space_number-name,
+.editor_extra_space-name {
+	float: left;
+	margin-right: 20px;
+	font-size: 20px;
+}
+
+.active_page {
+	background: #4087ac;
+	border: 1px solid rgba(255,255,255,0);
+	box-shadow: none;
+}
+
+.active_page a { color: #B8B8A1; }
+
+.one_photo {
+	float: left;
+	width: 150px;
+	height: 113px;
+	margin: 5px;
+	border-radius: 5px;
+	border: 1px solid white;
+	box-shadow: 0 0 10px white;
+	overflow: hidden;
+}
+
+.book ul li h3 a {
+	color: #d45252;
+	text-align: center;
+}
+
+.my_select {
+	display: block;
+	width: 96%;
+	margin: 0 auto;
+	padding: 5px 20px;
+	font: 18px 'Beauty';
+	color: black;
+	border-radius: 5px;
+	outline: none;
+}
+
+.feature {
+	margin: 10px;
+	padding: 10px;
+	font-size: 18px;
+	color: black;
+	background: rgba(255,255,255,.8);
+	border-radius: 7px;
+	border: 1px solid white;
+}
+
+.more_info {
+	margin: 10px;
+	padding: 10px;
+	color: black;
+	background: rgba(255,255,255,.8);
+	border-radius: 7px;
+	border: 1px solid white;
+}
+
+.room-number {
+	margin: 10px;
+	padding: 3px 10px;
+	font-size: 20px;
+	color: black;
+}
+
+.price-table {
+	font-size: 10pt;
+	color: #333;
+	background: white;
+	border-radius: 7px;
+	border: 1px solid #f5f5dc;
+}
+
+.price-table tr:hover{
+	background: #f5f5dc;
+}
+
+.price-table td {
+	padding: 3px;
+	border-radius: 5px;
+	border: 1px solid #509111;
+	text-align: center;
+	cursor: default;
+	box-shadow: 1px 1px 1px black;
+}
+
+.input_disabled {
+	background: #a55;
+	cursor: not-allowed;
+}
+
+.period_number_name:nth-child(2n),.period_number_eat:nth-child(2n),.period_number_price:nth-child(2n+1){
+	background: #ccc;
+}
+
+.price-table p{
+	padding: 0;
+	margin: 0;
+	background: inherit;
+}
+
+.price-table input[type="text"]{
+	border: 1px dashed #555;
+	border-radius: 5px;
+	padding: 3px 5px;
+	outline: none;
+}
+
+.price-table input[type="text"]:focus{
+	border: 1px solid #555;
+	box-shadow: 0 0 3px green;
+}
+
+#info_1,
+#editor_id_1 { display: block; }
+
+#info_2,
+#info_3,
+#info_4,
+#info_5,
+#info_6,
+#info_7,
+#editor_id_2,
+#editor_id_3,
+#editor_id_4,
+#editor_id_5,
+#editor_id_6 { display: none; }
+
+#map {
+	display: block;
+	width: 900px;
+	height: 400px;
+	margin: 20px auto 0;
+}
+
+.add_reviews-button {
+	display: block;
+	height: 30px;
+	margin: 0 7px;
+	padding: 10px;
+	font: 16px bold 'FuturaBook';
+	color: #F5F5DC;
+	text-align: center;
+	background: url(../img/button_element.png) repeat-x;
+	border-radius: 4px;
+  border: 1px solid #509111;
+	box-shadow: 2px 2px 2px black;
+	cursor:pointer;
+}
+
+.add_reviews-button:hover { text-shadow: 0 0 1px #f5f5dc; }
+
+.add_reviews-button:active {
+	background: #3ee4f9;
+	box-shadow: 0 0 1px black;
+}
+
+.reviews_form,
+.book_form { font-family: 'FuturaBook'; }
+
+.reviews_form ul,
+.book_form ul {
+	margin: 0;
+	padding: 0;
+	list-style-position: outside;
+	list-style-type: none;
+}
+
+.reviews_form li,
+.book_form li {
+	position: relative;
+	padding: 12px;
+	border-bottom: 1px solid #eee;
+}
+
+.reviews_form li:first-child { border-bottom: 1px solid #777; }
+
+.reviews_form li:last-child { border-bottom: none; }
+
+.reviews_form h2,
+.book_form h2 {
+	display: inline;
+	margin: 0;
+}
+
+.required_notification {
+	display: inline;
+	float: right;
+	margin: 5px 0 0 0;
+	color: #d45252;
+}
+
+.reviews_form label,
+.book_form label {
+	display: inline-block;
+	float: left;
+	width: 200px;
+	margin-top: 3px;
+	padding:3px;
+}
+
+.reviews_form input,
+.book_form input {
+    height: 20px;
+	padding: 5px 8px;
+}
+
+#datepicker_start,
+#datepicker_end,
+#book_start,
+#book_end { background: url(/img/calendar_30.png) no-repeat right; }
+
+.reviews_fio,
+.reviews_email,
+.reviews_whence,
+.book_fio,
+.book_email,
+.book_whence,
+.book_phone {
+	width: 73%;
+	background: none;
+}
+
+.book_form textarea {
+	width: 98%;
+	padding:8px;
+	background: none;
+	resize: none;
+}
+
+.reviews_form button,
+.book_form button {
+	width: 100%;
+	padding: 15px 0;
+	font-size: 16px;
+	cursor: default;
+}
+
+.reviews_form input,
+.book_form input,
+.book_form textarea {
+    border-radius: 2px;
+    border: 1px solid #aaa;
+    box-shadow: 0px 0px 3px #ccc, 0 10px 15px #eee inset;
+}
+
+.reviews_form input:focus,
+.book_form input:focus,
+.book_form textarea:focus {
+    background: white;
+    border: 1px solid #555;
+    box-shadow: 0 0 3px #aaa;
+}
+
+.reviews_form button.submit,
+.book_submit {
+	padding: 10px 20px;
+	color: #f5f5dc;
+	text-align: center;
+	background: url(../img/button_element.png) repeat-x;
+	border-radius: 4px;
+	border: none;
+	box-shadow: 1px 1px 1px black;
+	cursor: pointer;
+	outline: none;
+}
+
+.editor_price-submit {
+	width: 100%;
+	padding: 10px 20px;
+	font: 20px 'FuturaBook';
+	color: #f5f5dc;
+	text-align: center;
+	background: url(../img/button_element.png) repeat-x;
+	border-radius: 4px;
+    border: none;
+    box-shadow: 1px 1px 1px black;
+    cursor: pointer;
+    outline: none;
+}
+
+.reviews_form button.submit:hover,
+.editor_price-submit:hover { text-shadow: 0 0 1px #f5f5dc; }
+
+.reviews_form button.submit:active,
+.editor_price-submit:active {
+	background: #50911e;
+	box-shadow: 0 0 1px black;
+}
+
+.book {
+	position: absolute;
+	top: 118px;
+	left: 50%;
+	z-index: 11;
+	display: none;
+	min-width: 880px;
+	max-width: 1180px;
+	margin-left: -450px;
+	padding: 10px;
+	background: white url(../img/bg-159.png);
+	border-radius: 10px;
+}
+
+.autoriz_h2 { text-align: center; }
+
+.autoriz_area {
+	width: 350px;
+	height: 200px;
+	margin: 10px auto;
+	padding: 5px;
+	background: white;
+	border-radius: 5px;
+}
+
+.autoriz_area h4 { text-align: center; }
+
+.autorize_password { margin-top: 5px; }
+
+.autorize_login-text,
+.autorize_password-text {
+	float: left;
+	width: 120px;
+	text-align: right;
+}
+
+.autorize_login-input,
+.autorize_password-input {
+	float: right;
+	width: 220px;
+}
+
+.autorize_login-input input,
+.autorize_password-input input {
+	width: 150px;
+	font: 18px FuturaBook;
+	outline: none;
+}
+
+.autoriz_area-submit {
+	width: 140px;
+	margin: 20px auto 0;
+}
+
+.autorize_submit {
+	width: 140px;
+	padding: 5px;
+	font: 16px 'Beauty';
+	color: #f5f5dc;
+	background: url(../img/button_element.png) repeat-x;
+	border-radius: 5px;
+	border: none;
+	box-shadow: 1px 1px 1px black;
+	cursor: pointer;
+	outline: none;
+}
+
+.autorize_submit:hover { text-shadow: 0 0 1px #f5f5dc; }
+
+.autorize_submit:active { box-shadow: 0 0 1px black; }

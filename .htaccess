@@ -1,0 +1,23 @@
+AddDefaultCharset utf-8
+
+Options +FollowSymLinks
+Options +SymLinksIfOwnerMatch
+RewriteEngine on
+RewriteBase /
+RewriteRule ^(.*)aleks$ http://aleksandriya-gd.ru/authorization.php
+
+RewriteRule ^(.*)about/$ http://aleksandriya-gd.ru/
+RewriteRule ^(.*)documents/$ http://aleksandriya-gd.ru/documents.php
+RewriteRule ^(.*)photo/$ http://aleksandriya-gd.ru/photo.php
+RewriteRule ^(.*)price/$ http://aleksandriya-gd.ru/price_2018.php
+RewriteRule ^(.*)reviews/$ http://aleksandriya-gd.ru/reviews.php
+RewriteRule ^(.*)contacts/$ http://aleksandriya-gd.ru/contacts.php
+RewriteRule ^(.*)editor_pr/$ http://aleksandriya-gd.ru/editor_price.php
+RewriteRule ^(.*)editor_period/$ http://aleksandriya-gd.ru/editor_period.php
+
+RewriteRule ^(.*)admin$ http://aleksandriya-gd.ru/admin.php
+RewriteRule ^(.*)admin/$ http://aleksandriya-gd.ru/admin.php
+RewriteRule ^(.*)administrator$ http://aleksandriya-gd.ru/administrator.php
+RewriteRule ^(.*)administrator/$ http://aleksandriya-gd.ru/administrator.php
+
+ErrorDocument 404 http://aleksandriya-gd.ru/404.php
